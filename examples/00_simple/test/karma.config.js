@@ -2,11 +2,22 @@
 
 module.exports = function (config) {
   config.set({
+
     files: [
-      './stitched.js',
-      './app/**/*.js'
+      './app/**/*.js',
     ],
-    frameworks: [ 'mocha' ],
-    browsers: [ 'Chrome' ]
+
+    frameworks: [
+      'mocha',
+      'commonjs',
+    ],
+
+    browsers: ['Chrome'],
+
+    preprocessors: {
+      './app/**/*.js': ['commonjs'],
+    },
+
+    logLevel: config.LOG_DEBUG,
   });
 };
