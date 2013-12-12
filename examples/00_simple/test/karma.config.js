@@ -4,6 +4,7 @@ module.exports = function (config) {
   config.set({
 
     files: [
+      '../app/**/*.js',
       './app/**/*.js',
     ],
 
@@ -15,6 +16,7 @@ module.exports = function (config) {
     browsers: ['Chrome'],
 
     preprocessors: {
+      '../app/**/*.js': ['commonjs'],
       './app/**/*.js': ['commonjs'],
     },
 
