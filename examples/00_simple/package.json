@@ -27,7 +27,7 @@
     "karma": "~0.10.4",
     "karma-chrome-launcher": "~0.1.0",
     "karma-mocha": "~0.1.0",
-    "karma-commonjs": "0.0.3"
+    "karma-browserify": "0.0.6"
   },
   "engines": {
     "node": ">=0.8"

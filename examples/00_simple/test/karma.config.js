@@ -4,22 +4,22 @@ module.exports = function (config) {
   config.set({
 
     files: [
-      '../app/**/*.js',
       './app/**/*.js',
     ],
 
     frameworks: [
       'mocha',
-      'commonjs',
+      'browserify',
     ],
 
     browsers: ['Chrome'],
 
     preprocessors: {
-      '../app/**/*.js': ['commonjs'],
-      './app/**/*.js': ['commonjs'],
+      './app/**/*.js': ['browserify'],
     },
 
     logLevel: config.LOG_DEBUG,
+
+    browserify: {},
   });
 };
